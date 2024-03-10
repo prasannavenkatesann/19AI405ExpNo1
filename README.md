@@ -47,9 +47,9 @@ program:
 Developing AI Agent with PEAS Description
 Developed by: PRASANNA V
 RegisterNumber: 212223240123
-
+```
 class VacuumCleanerAgent: def init(self): # Initialize the agent's state (location and dirt status) self.location = "A" # Initial location (can be "A" or "B") self.dirt_status = {"A": False, "B": False} # Initial dirt status (False means no dirt)
-
+```
 def move_left(self):
     # Move the agent to the left if possible
     if self.location == "B":
@@ -88,7 +88,7 @@ def print_status(self):
     print(f"Location: {self.location}, Dirt Status: {self.dirt_status}")
 
 
-
+```
 EXAMPLE USAGE:
 agent = VacuumCleanerAgent()
 
