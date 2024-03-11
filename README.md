@@ -1,6 +1,6 @@
 <h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Name: ISTIN B</h3>
+<h3>Register Number:212223040068</h3>
 
 
 <h3>AIM:</h3>
@@ -41,68 +41,60 @@
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
 
+## Developing AI Agent with PEAS Description
 
-program:
-```
-Developing AI Agent with PEAS Description
-Developed by: PRASANNA V
-RegisterNumber: 212223240123
-```
-class VacuumCleanerAgent: def init(self): # Initialize the agent's state (location and dirt status) self.location = "A" # Initial location (can be "A" or "B") self.dirt_status = {"A": False, "B": False} # Initial dirt status (False means no dirt)
-```
-def move_left(self):
-    # Move the agent to the left if possible
-    if self.location == "B":
-        self.location = "A"
-
-def move_right(self):
-    # Move the agent to the right if possible
-    if self.location == "A":
-        self.location = "B"
-
-def suck_dirt(self):
-    # Suck dirt in the current location if there is dirt
-    if self.dirt_status[self.location]:
-        self.dirt_status[self.location] = False
-        print(f"Sucked dirt in location {self.location}")
-
-def do_nothing(self):
-    # Do nothing
-    pass
-
-def perform_action(self, action):
-    # Perform the specified action
-    if action == "left":
-        self.move_left()
-    elif action == "right":
-        self.move_right()
-    elif action == "suck":
-        self.suck_dirt()
-    elif action == "nothing":
-        self.do_nothing()
-    else:
-        print("Invalid action")
-
-def print_status(self):
-    # Print the current status of the agent
-    print(f"Location: {self.location}, Dirt Status: {self.dirt_status}")
-
+<h3>PROGRAM:</h3>
 
 ```
-<h1>EXAMPLE USAGE:</h1>
+class VacuumCleanerAgent:
+    def __init__(self):
+        # Initialize the agent's state (location and dirt status)
+        self.location = "A"  # Initial location (can be "A" or "B")
+        self.dirt_status = {"A": False, "B": False}  # Initial dirt status (False means no dirt)
+    def move_left(self):
+        # Move the agent to the left if possible
+        if self.location == "B":
+            self.location = "A"
+    def move_right(self):
+        # Move the agent to the right if possible
+        if self.location == "A":
+            self.location = "B"
+    def suck_dirt(self):
+        # Suck dirt in the current location if there is dirt
+        if self.dirt_status[self.location]:
+            self.dirt_status[self.location] = False
+            print(f"Sucked dirt in location {self.location}")
+    def do_nothing(self):
+        # Do nothing
+        pass
+    def perform_action(self, action):
+        # Perform the specified action
+        if action == "left":
+            self.move_left()
+        elif action == "right":
+            self.move_right()
+        elif action == "suck":
+            self.suck_dirt()
+        elif action == "nothing":
+            self.do_nothing()
+        else:
+            print("Invalid action")
+    def print_status(self):
+        # Print the current status of the agent
+        print(f"Location: {self.location}, Dirt Status: {self.dirt_status}")
+# Example usage:
 agent = VacuumCleanerAgent()
+# Move the agent, suck dirt, and do nothing
+agent.perform_action("left")
+agent.print_status()
+agent.perform_action("suck")
+agent.print_status()
+agent.perform_action("nothing")
+agent.print_status()
+```
+<h3>OUTPUT:</h3>
 
-<h1>Move the agent, suck dirt, and do nothing</h1>
+![image](https://github.com/Lingeswaran04/19AI405ExpNo1/assets/119103865/ceac8bb1-8461-40a4-b54a-a434c7944406)
 
-agent.perform_action("left") agent.print_status() agent.perform_action("suck") agent.print_status() agent.perform_action("nothing") agent.print_status()
-
-
-OUTPUT:
-
-![Screenshot 2024-03-10 141141](https://github.com/prasannavenkatesann/19AI405ExpNo1/assets/147118685/f710d1af-f7ee-4337-ba51-0990c25b1e68)
-
-
-
-<h1>RESULT:</h1>
-Thus the Developing AI Agent with PEAS Description was implemented using python programming.
-
+<h3>RESULT:</h3>
+Thus,the developing AI Agent with PEAS Description was implemented using python programming.
